@@ -6,3 +6,6 @@
 - 可选择记录和读入用户细胞词库
 #
 ![loading...](https://github.com/ilan-NJU/crude-pinyin/blob/master/%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B.png)
+
+- 多音字有待实现
+- 没有更高级的词法分析，如期期艾艾 拼成qiqiaiai第二个音节会默认向后匹配为qia，从而无法识别，需写成qiqi'aiai才可正确识别
