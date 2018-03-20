@@ -4,3 +4,4 @@
 - 通过读入pinyin.txt和word.txt两个资源文件加载音节表和词库
 - 全拼输入（必要时需加'作为分隔符）
 - 可选择记录和读入用户细胞词库
+![loading...](crude-pinyin/使用示例.png)
