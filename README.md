@@ -7,7 +7,7 @@
 
 ### example
 
-  ![loading...](https://github.com/ilan-NJU/crude-pinyin/blob/master/%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B.png)
+  ![loading...](https://github.com/ilan-NJU/crude-pinyin/blob/master/img/%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B.png)
 
 ### to be improved
 
