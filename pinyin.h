@@ -7,7 +7,7 @@
 #include <algorithm>
 #include<iomanip>
 #include<cassert>
-//git
+
 using namespace std;
 
 class info
@@ -31,10 +31,10 @@ typedef unordered_map<string, info> hmap;
 hmap syllabary;
 set<string> word_book;
 set<string> user_word_book;
-string sentence;	//ÓÃÓÚ½ÓÊÜÊäÈëµÄÎÄ±¾
+string sentence;	//ç”¨äºæ¥å—è¾“å…¥çš„æ–‡æœ¬
 
-void read_file();			//¶Á´Ê¿â Òô½Ú±í ÓÃ»§´Ê¿â
-void syllable_partition(string input_s, vector<string> &syl_seq, vector<hmap::iterator> &syl_it);//¸ù¾İ×î´óÆ¥ÅäÔ­Ôò ²ğ·ÖÓÃ»§ÊäÈëµÄÒô½Ú
-int choose(vector<string> &Candidate);	//¸ù¾İºòÑ¡´Ê±í µÃµ½ÓÃ»§Ñ¡Ôñ ²ÎÊıÎªºòÑ¡´Ê±í ·µ»ØÓÃ»§Ñ¡ÔñµÄ´Ê
-void match_word(int i, vector<string> &syl_seq, vector<hmap::iterator> &syl_it, vector<string> &Candidate, set<string> &word_book);//¸ù¾İÆ´ÒôĞòÁĞºÍ´Ê±í ÅĞ¶Ïµ±Ç°Æ¥ÅäÎ»ÖÃÏòºó¿ÉÄÜ¹¹³ÉµÄ´Ê ²¢¼ÓÈëºòÑ¡´Ê±í
-void save();				//Ñ¡ÔñÊÇ·ñ ±£´æÓÃ»§´Ê¿â ±£´æÊäÈëÄÚÈİ
+void read_file();			//è¯»è¯åº“ éŸ³èŠ‚è¡¨ ç”¨æˆ·è¯åº“
+void syllable_partition(string input_s, vector<string> &syl_seq, vector<hmap::iterator> &syl_it);//æ ¹æ®æœ€å¤§åŒ¹é…åŸåˆ™ æ‹†åˆ†ç”¨æˆ·è¾“å…¥çš„éŸ³èŠ‚
+int choose(vector<string> &Candidate);	//æ ¹æ®å€™é€‰è¯è¡¨ å¾—åˆ°ç”¨æˆ·é€‰æ‹© å‚æ•°ä¸ºå€™é€‰è¯è¡¨ è¿”å›ç”¨æˆ·é€‰æ‹©çš„è¯
+void match_word(int i, vector<string> &syl_seq, vector<hmap::iterator> &syl_it, vector<string> &Candidate, set<string> &word_book);//æ ¹æ®æ‹¼éŸ³åºåˆ—å’Œè¯è¡¨ åˆ¤æ–­å½“å‰åŒ¹é…ä½ç½®å‘åå¯èƒ½æ„æˆçš„è¯ å¹¶åŠ å…¥å€™é€‰è¯è¡¨
+void save();				//é€‰æ‹©æ˜¯å¦ ä¿å­˜ç”¨æˆ·è¯åº“ ä¿å­˜è¾“å…¥å†…å®¹
